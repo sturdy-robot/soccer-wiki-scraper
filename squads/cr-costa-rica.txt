@@ -1,0 +1,31 @@
+
+##############################
+# Costa Rica (CRI) 
+#   - 26 players
+
+(1)   GK  Keylor Navas       ##  107  ,Paris Saint-Germain
+(18)  GK  Esteban Alvarado   ##   25  ,Herediano
+(23)  GK  Patrick Sequeira   ##    2  ,Lugo
+(3)   DF  Juan Pablo Vargas  ##   12  ,Millonarios
+(4)   DF  Keysher Fuller     ##   31  ,Herediano
+(6)   DF  Óscar Duarte       ##   71  ,Al-Wehda
+(8)   DF  Bryan Oviedo       ##   76  ,Real Salt Lake
+(15)  DF  Francisco Calvo    ##   75  ,Konyaspor
+(16)  DF  Carlos Martínez    ##    7  ,San Carlos
+(19)  DF  Kendall Waston     ##   63  ,Saprissa
+(22)  DF  Rónald Matarrita   ##   52  ,FC Cincinnati
+(2)   MF  Daniel Chacón      ##    8  ,Cartaginés
+(5)   MF  Celso Borges       ##  155  ,Alajuelense
+(9)   MF  Jewison Bennette   ##    7  ,Sunderland
+(10)  MF  Bryan Ruiz         ##  146  ,Alajuelense
+(13)  MF  Gerson Torres      ##   13  ,Herediano
+(14)  MF  Youstin Salas      ##    4  ,Saprissa
+(17)  MF  Yeltsin Tejeda     ##   73  ,Herediano
+(20)  MF  Brandon Aguilera   ##    4  ,Guanacasteca
+(21)  MF  Douglas López      ##    3  ,Herediano
+(24)  MF  Roan Wilson        ##    3  ,Municipal Grecia
+(25)  MF  Anthony Hernández  ##    3  ,Puntarenas
+(26)  MF  Álvaro Zamora      ##    3  ,Saprissa
+(7)   FW  Anthony Contreras  ##    9  ,Herediano
+(11)  FW  Johan Venegas      ##   82  ,Alajuelense
+(12)  FW  Joel Campbell      ##  119  ,León

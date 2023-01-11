@@ -1,0 +1,31 @@
+
+##############################
+# Japan (JPN) 
+#   - 26 players
+
+(1)   GK  Eiji Kawashima     ##   95  ,Strasbourg
+(12)  GK  Shūichi Gonda      ##   34  ,Shimizu S-Pulse
+(23)  GK  Daniel Schmidt     ##   11  ,Sint-Truiden
+(2)   DF  Miki Yamane        ##   15  ,Kawasaki Frontale
+(3)   DF  Shogo Taniguchi    ##   14  ,Kawasaki Frontale
+(4)   DF  Ko Itakura         ##   13  ,Borussia Mönchengladbach
+(5)   DF  Yuto Nagatomo      ##  138  ,FC Tokyo
+(16)  DF  Takehiro Tomiyasu  ##   29  ,Arsenal
+(19)  DF  Hiroki Sakai       ##   72  ,Urawa Red Diamonds
+(22)  DF  Maya Yoshida       ##  122  ,Schalke 04
+(26)  DF  Hiroki Ito         ##    6  ,VfB Stuttgart
+(6)   MF  Wataru Endo        ##   43  ,VfB Stuttgart
+(7)   MF  Gaku Shibasaki     ##   60  ,Leganés
+(8)   MF  Ritsu Dōan         ##   29  ,SC Freiburg
+(9)   MF  Kaoru Mitoma       ##    9  ,Brighton & Hove Albion
+(10)  MF  Takumi Minamino    ##   44  ,Monaco
+(11)  MF  Takefusa Kubo      ##   20  ,Real Sociedad
+(13)  MF  Hidemasa Morita    ##   17  ,Sporting CP
+(14)  MF  Junya Ito          ##   38  ,Reims
+(15)  MF  Daichi Kamada      ##   22  ,Eintracht Frankfurt
+(17)  MF  Ao Tanaka          ##   15  ,Fortuna Düsseldorf
+(24)  MF  Yuki Soma          ##    8  ,Nagoya Grampus
+(18)  FW  Takuma Asano       ##   37  ,VfL Bochum
+(20)  FW  Shuto Machino      ##    4  ,Shonan Bellmare
+(21)  FW  Ayase Ueda         ##   11  ,Cercle Brugge
+(25)  FW  Daizen Maeda       ##    8  ,Celtic

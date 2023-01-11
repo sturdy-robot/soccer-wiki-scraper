@@ -1,0 +1,31 @@
+
+##############################
+# Serbia (SRB) 
+#   - 26 players
+
+(1)   GK  Marko Dmitrović          ##  19  ,Sevilla
+(12)  GK  Predrag Rajković         ##  28  ,Mallorca
+(23)  GK  Vanja Milinković-Savić   ##   7  ,Torino
+(2)   DF  Strahinja Pavlović       ##  22  ,Red Bull Salzburg
+(3)   DF  Strahinja Eraković       ##   2  ,Red Star Belgrade
+(4)   DF  Nikola Milenković        ##  39  ,Fiorentina
+(5)   DF  Miloš Veljković          ##  21  ,Werder Bremen
+(13)  DF  Stefan Mitrović          ##  35  ,Getafe
+(15)  DF  Srđan Babić              ##   2  ,Almería
+(25)  DF  Filip Mladenović         ##  20  ,Legia Warsaw
+(6)   MF  Nemanja Maksimović       ##  40  ,Getafe
+(8)   MF  Nemanja Gudelj           ##  49  ,Sevilla
+(14)  MF  Andrija Živković         ##  29  ,PAOK
+(16)  MF  Saša Lukić               ##  32  ,Torino
+(17)  MF  Filip Kostić             ##  50  ,Juventus
+(19)  MF  Uroš Račić               ##   9  ,Braga
+(20)  MF  Sergej Milinković-Savić  ##  36  ,Lazio
+(22)  MF  Darko Lazović            ##  26  ,Hellas Verona
+(24)  MF  Ivan Ilić                ##   6  ,Hellas Verona
+(26)  MF  Marko Grujić             ##  18  ,Porto
+(7)   FW  Nemanja Radonjić         ##  36  ,Torino
+(9)   FW  Aleksandar Mitrović      ##  76  ,Fulham
+(10)  FW  Dušan Tadić              ##  91  ,Ajax
+(11)  FW  Luka Jović               ##  29  ,Fiorentina
+(18)  FW  Dušan Vlahović           ##  17  ,Juventus
+(21)  FW  Filip Đuričić            ##  37  ,Sampdoria

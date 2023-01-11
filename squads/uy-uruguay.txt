@@ -1,0 +1,31 @@
+
+##############################
+# Uruguay (URU) 
+#   - 26 players
+
+(1)   GK  Fernando Muslera        ##  133  ,Galatasaray
+(12)  GK  Sebastián Sosa          ##    1  ,Independiente
+(23)  GK  Sergio Rochet           ##    8  ,Nacional
+(2)   DF  José Giménez            ##   78  ,Atlético Madrid
+(3)   DF  Diego Godín             ##  159  ,Vélez Sarsfield
+(4)   DF  Ronald Araújo           ##   12  ,Barcelona
+(13)  DF  Guillermo Varela        ##    9  ,Flamengo
+(16)  DF  Mathías Olivera         ##    8  ,Napoli
+(17)  DF  Matías Viña             ##   26  ,Roma
+(19)  DF  Sebastián Coates        ##   47  ,Sporting CP
+(22)  DF  Martín Cáceres          ##  115  ,LA Galaxy
+(26)  DF  José Luis Rodríguez     ##    0  ,Nacional
+(5)   MF  Matías Vecino           ##   62  ,Lazio
+(6)   MF  Rodrigo Bentancur       ##   51  ,Tottenham Hotspur
+(7)   MF  Nicolás de la Cruz      ##   17  ,River Plate
+(10)  MF  Giorgian de Arrascaeta  ##   40  ,Flamengo
+(14)  MF  Lucas Torreira          ##   40  ,Galatasaray
+(15)  MF  Federico Valverde       ##   44  ,Real Madrid
+(24)  MF  Agustín Canobbio        ##    3  ,Athletico Paranaense
+(25)  MF  Manuel Ugarte           ##    6  ,Sporting CP
+(8)   FW  Facundo Pellistri       ##    7  ,Manchester United
+(9)   FW  Luis Suárez             ##  134  ,Nacional
+(11)  FW  Darwin Núñez            ##   13  ,Liverpool
+(18)  FW  Maxi Gómez              ##   27  ,Trabzonspor
+(20)  FW  Facundo Torres          ##   10  ,Orlando City SC
+(21)  FW  Edinson Cavani          ##  133  ,Valencia

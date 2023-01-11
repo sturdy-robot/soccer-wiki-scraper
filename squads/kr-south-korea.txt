@@ -1,0 +1,31 @@
+
+##############################
+# South Korea (KOR) 
+#   - 26 players
+
+(1)   GK  Kim Seung-gyu    ##   67  ,Al-Shabab
+(12)  GK  Song Bum-keun    ##    1  ,Jeonbuk Hyundai Motors
+(21)  GK  Jo Hyeon-woo     ##   22  ,Ulsan Hyundai
+(2)   DF  Yoon Jong-gyu    ##    4  ,FC Seoul
+(3)   DF  Kim Jin-su       ##   61  ,Jeonbuk Hyundai Motors
+(4)   DF  Kim Min-jae      ##   44  ,Napoli
+(14)  DF  Hong Chul        ##   46  ,Daegu FC
+(15)  DF  Kim Moon-hwan    ##   22  ,Jeonbuk Hyundai Motors
+(19)  DF  Kim Young-gwon   ##   96  ,Ulsan Hyundai
+(20)  DF  Kwon Kyung-won   ##   28  ,Gamba Osaka
+(23)  DF  Kim Tae-hwan     ##   19  ,Ulsan Hyundai
+(24)  DF  Cho Yu-min       ##    4  ,Daejeon Hana Citizen
+(5)   MF  Jung Woo-young   ##   66  ,Al-Sadd
+(6)   MF  Hwang In-beom    ##   37  ,Olympiacos
+(7)   MF  Son Heung-min    ##  104  ,Tottenham Hotspur
+(8)   MF  Paik Seung-ho    ##   14  ,Jeonbuk Hyundai Motors
+(10)  MF  Lee Jae-sung     ##   64  ,Mainz 05
+(11)  MF  Hwang Hee-chan   ##   49  ,Wolverhampton Wanderers
+(13)  MF  Son Jun-ho       ##   15  ,Shandong Taishan
+(17)  MF  Na Sang-ho       ##   24  ,FC Seoul
+(18)  MF  Lee Kang-in      ##    6  ,Mallorca
+(22)  MF  Kwon Chang-hoon  ##   42  ,Gimcheon Sangmu
+(25)  MF  Jeong Woo-yeong  ##    9  ,SC Freiburg
+(26)  MF  Song Min-kyu     ##   13  ,Jeonbuk Hyundai Motors
+(9)   FW  Cho Gue-sung     ##   16  ,Jeonbuk Hyundai Motors
+(16)  FW  Hwang Ui-jo      ##   49  ,Olympiacos

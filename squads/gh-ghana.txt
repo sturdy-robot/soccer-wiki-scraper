@@ -1,0 +1,31 @@
+
+##############################
+# Ghana (GHA) 
+#   - 26 players
+
+(1)   GK  Lawrence Ati-Zigi      ##   11  ,St. Gallen
+(12)  GK  Ibrahim Danlad         ##    4  ,Asante Kotoko
+(16)  GK  Abdul Manaf Nurudeen   ##    2  ,Eupen
+(2)   DF  Tariq Lamptey          ##    2  ,Brighton & Hove Albion
+(3)   DF  Denis Odoi             ##    4  ,Club Brugge
+(4)   DF  Mohammed Salisu        ##    3  ,Southampton
+(14)  DF  Gideon Mensah          ##   12  ,Auxerre
+(15)  DF  Joseph Aidoo           ##   11  ,Celta Vigo
+(17)  DF  Baba Rahman            ##   48  ,Reading
+(18)  DF  Daniel Amartey         ##   46  ,Leicester City
+(23)  DF  Alexander Djiku        ##   18  ,Strasbourg
+(26)  DF  Alidu Seidu            ##    4  ,Clermont
+(5)   MF  Thomas Partey          ##   40  ,Arsenal
+(6)   MF  Elisha Owusu           ##    3  ,Gent
+(7)   MF  Abdul Fatawu Issahaku  ##   13  ,Sporting CP
+(8)   MF  Daniel-Kofi Kyereh     ##   15  ,SC Freiburg
+(11)  MF  Osman Bukari           ##    7  ,Red Star Belgrade
+(13)  MF  Daniel Afriyie         ##    7  ,Hearts of Oak
+(20)  MF  Mohammed Kudus         ##   18  ,Ajax
+(21)  MF  Salis Abdul Samed      ##    1  ,Lens
+(22)  MF  Kamaldeen Sulemana     ##   13  ,Rennes
+(24)  MF  Kamal Sowah            ##    1  ,Club Brugge
+(9)   FW  Jordan Ayew            ##   84  ,Crystal Palace
+(10)  FW  André Ayew             ##  110  ,Al-Sadd
+(19)  FW  Iñaki Williams         ##    3  ,Athletic Bilbao
+(25)  FW  Antoine Semenyo        ##    4  ,Bristol City

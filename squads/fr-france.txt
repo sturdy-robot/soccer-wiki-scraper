@@ -1,0 +1,31 @@
+
+##############################
+# France (FRA) 
+#   - 26 players
+
+(1)   GK  Hugo Lloris          ##  139  ,Tottenham Hotspur
+(16)  GK  Steve Mandanda       ##   34  ,Rennes
+(23)  GK  Alphonse Areola      ##    5  ,West Ham United
+(2)   DF  Benjamin Pavard      ##   46  ,Bayern Munich
+(3)   DF  Axel Disasi          ##    0  ,Monaco
+(4)   DF  Raphaël Varane       ##   87  ,Manchester United
+(5)   DF  Jules Koundé         ##   12  ,Barcelona
+(17)  DF  William Saliba       ##    7  ,Arsenal
+(18)  DF  Dayot Upamecano      ##    7  ,Bayern Munich
+(21)  DF  Lucas Hernandez      ##   32  ,Bayern Munich
+(22)  DF  Théo Hernandez       ##    7  ,Milan
+(24)  DF  Ibrahima Konaté      ##    2  ,Liverpool
+(6)   MF  Matteo Guendouzi     ##    6  ,Marseille
+(8)   MF  Aurélien Tchouaméni  ##   14  ,Real Madrid
+(13)  MF  Youssouf Fofana      ##    2  ,Monaco
+(14)  MF  Adrien Rabiot        ##   29  ,Juventus
+(15)  MF  Jordan Veretout      ##    5  ,Marseille
+(25)  MF  Eduardo Camavinga    ##    4  ,Real Madrid
+(7)   FW  Antoine Griezmann    ##  110  ,Atlético Madrid
+(9)   FW  Olivier Giroud       ##  114  ,Milan
+(10)  FW  Kylian Mbappé        ##   59  ,Paris Saint-Germain
+(11)  FW  Ousmane Dembélé      ##   28  ,Barcelona
+(12)  FW  Randal Kolo Muani    ##    2  ,Eintracht Frankfurt
+(19)  FW  Karim Benzema        ##   97  ,Real Madrid
+(20)  FW  Kingsley Coman       ##   40  ,Bayern Munich
+(26)  FW  Marcus Thuram        ##    4  ,Borussia Mönchengladbach

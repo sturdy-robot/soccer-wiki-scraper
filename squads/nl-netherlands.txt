@@ -1,0 +1,31 @@
+
+##############################
+# Netherlands (NLD) 
+#   - 26 players
+
+(1)   GK  Remko Pasveer     ##   2  ,Ajax
+(13)  GK  Justin Bijlow     ##   6  ,Feyenoord
+(23)  GK  Andries Noppert   ##   0  ,Heerenveen
+(2)   DF  Jurriën Timber    ##  10  ,Ajax
+(3)   DF  Matthijs de Ligt  ##  38  ,Bayern Munich
+(4)   DF  Virgil van Dijk   ##  49  ,Liverpool
+(5)   DF  Nathan Aké        ##  29  ,Manchester City
+(6)   DF  Stefan de Vrij    ##  59  ,Internazionale
+(16)  DF  Tyrell Malacia    ##   6  ,Manchester United
+(17)  DF  Daley Blind       ##  94  ,Ajax
+(22)  DF  Denzel Dumfries   ##  37  ,Internazionale
+(26)  DF  Jeremie Frimpong  ##   0  ,Bayer Leverkusen
+(11)  MF  Steven Berghuis   ##  39  ,Ajax
+(14)  MF  Davy Klaassen     ##  35  ,Ajax
+(15)  MF  Marten de Roon    ##  30  ,Atalanta
+(20)  MF  Teun Koopmeiners  ##  10  ,Atalanta
+(21)  MF  Frenkie de Jong   ##  45  ,Barcelona
+(24)  MF  Kenneth Taylor    ##   2  ,Ajax
+(25)  MF  Xavi Simons       ##   0  ,PSV Eindhoven
+(7)   FW  Steven Bergwijn   ##  24  ,Ajax
+(8)   FW  Cody Gakpo        ##   9  ,PSV Eindhoven
+(9)   FW  Luuk de Jong      ##  38  ,PSV Eindhoven
+(10)  FW  Memphis Depay     ##  81  ,Barcelona
+(12)  FW  Noa Lang          ##   5  ,Club Brugge
+(18)  FW  Vincent Janssen   ##  20  ,Antwerp
+(19)  FW  Wout Weghorst     ##  15  ,Beşiktaş

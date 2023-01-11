@@ -1,0 +1,31 @@
+
+##############################
+# United States (USA) 
+#   - 26 players
+
+(1)   GK  Matt Turner             ##  20  ,Arsenal
+(12)  GK  Ethan Horvath           ##   8  ,Luton Town
+(25)  GK  Sean Johnson            ##  10  ,New York City FC
+(2)   DF  Sergiño Dest            ##  19  ,Milan
+(3)   DF  Walker Zimmerman        ##  33  ,Nashville SC
+(5)   DF  Antonee Robinson        ##  29  ,Fulham
+(13)  DF  Tim Ream                ##  46  ,Fulham
+(15)  DF  Aaron Long              ##  29  ,New York Red Bulls
+(18)  DF  Shaq Moore              ##  15  ,Nashville SC
+(20)  DF  Cameron Carter-Vickers  ##  11  ,Celtic
+(22)  DF  DeAndre Yedlin          ##  75  ,Inter Miami CF
+(26)  DF  Joe Scally              ##   3  ,Borussia Mönchengladbach
+(4)   MF  Tyler Adams             ##  32  ,Leeds United
+(6)   MF  Yunus Musah             ##  19  ,Valencia
+(8)   MF  Weston McKennie         ##  37  ,Juventus
+(14)  MF  Luca de la Torre        ##  12  ,Celta Vigo
+(17)  MF  Cristian Roldan         ##  32  ,Seattle Sounders FC
+(23)  MF  Kellyn Acosta           ##  53  ,Los Angeles FC
+(7)   FW  Giovanni Reyna          ##  14  ,Borussia Dortmund
+(9)   FW  Jesús Ferreira          ##  15  ,FC Dallas
+(10)  FW  Christian Pulisic       ##  52  ,Chelsea
+(11)  FW  Brenden Aaronson        ##  24  ,Leeds United
+(16)  FW  Jordan Morris           ##  49  ,Seattle Sounders FC
+(19)  FW  Haji Wright             ##   3  ,Antalyaspor
+(21)  FW  Timothy Weah            ##  25  ,Lille
+(24)  FW  Josh Sargent            ##  20  ,Norwich City

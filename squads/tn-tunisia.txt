@@ -1,0 +1,31 @@
+
+##############################
+# Tunisia (TUN) 
+#   - 26 players
+
+(1)   GK  Aymen Mathlouthi          ##  73  ,Étoile du Sahel
+(16)  GK  Aymen Dahmen              ##   5  ,CS Sfaxien
+(22)  GK  Bechir Ben Saïd           ##  10  ,US Monastir
+(26)  GK  Mouez Hassen              ##  20  ,Club Africain
+(2)   DF  Bilel Ifa                 ##  37  ,Kuwait SC
+(3)   DF  Montassar Talbi           ##  23  ,Lorient
+(4)   DF  Yassine Meriah            ##  61  ,Espérance de Tunis
+(6)   DF  Dylan Bronn               ##  36  ,Salernitana
+(12)  DF  Ali Maâloul               ##  83  ,Al Ahly
+(20)  DF  Mohamed Dräger            ##  34  ,Luzern
+(21)  DF  Wajdi Kechrida            ##  19  ,Atromitos
+(24)  DF  Ali Abdi                  ##  10  ,Caen
+(5)   MF  Nader Ghandri             ##   8  ,Club Africain
+(8)   MF  Hannibal Mejbri           ##  19  ,Birmingham City
+(13)  MF  Ferjani Sassi             ##  78  ,Al-Duhail
+(14)  MF  Aïssa Laïdouni            ##  25  ,Ferencváros
+(15)  MF  Mohamed Ali Ben Romdhane  ##  23  ,Espérance de Tunis
+(17)  MF  Ellyes Skhiri             ##  49  ,1. FC Köln
+(18)  MF  Ghailene Chaalali         ##  31  ,Espérance de Tunis
+(7)   FW  Youssef Msakni            ##  88  ,Al-Arabi
+(9)   FW  Issam Jebali              ##  10  ,OB
+(10)  FW  Wahbi Khazri              ##  72  ,Montpellier
+(11)  FW  Taha Yassine Khenissi     ##  48  ,Kuwait SC
+(19)  FW  Seifeddine Jaziri         ##  29  ,Zamalek
+(23)  FW  Naïm Sliti                ##  69  ,Al-Ettifaq
+(25)  FW  Anis Ben Slimane          ##  25  ,Brøndby

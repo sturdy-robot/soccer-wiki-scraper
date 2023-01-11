@@ -1,0 +1,31 @@
+
+##############################
+# Cameroon (CMR) 
+#   - 26 players
+
+(1)   GK  Simon Ngapandouetnbu        ##   0  ,Marseille
+(16)  GK  Devis Epassy                ##   5  ,Abha
+(23)  GK  André Onana                 ##  34  ,Internazionale
+(2)   DF  Jerome Ngom Mbekeli         ##   2  ,Colombe Sportive
+(3)   DF  Nicolas Nkoulou             ##  79  ,Aris
+(4)   DF  Christopher Wooh            ##   4  ,Rennes
+(17)  DF  Olivier Mbaizo              ##  11  ,Philadelphia Union
+(19)  DF  Collins Fai                 ##  53  ,Al-Tai
+(21)  DF  Jean-Charles Castelletto    ##  15  ,Nantes
+(24)  DF  Enzo Ebosse                 ##   3  ,Udinese
+(25)  DF  Nouhou Tolo                 ##  19  ,Seattle Sounders FC
+(5)   MF  Gaël Ondoua                 ##   4  ,Hannover 96
+(7)   MF  Georges-Kévin Nkoudou       ##   3  ,Beşiktaş
+(8)   MF  André-Frank Zambo Anguissa  ##  44  ,Napoli
+(14)  MF  Samuel Gouet                ##  22  ,Mechelen
+(15)  MF  Pierre Kunde                ##  33  ,Olympiacos
+(18)  MF  Martin Hongla               ##  20  ,Hellas Verona
+(22)  MF  Olivier Ntcham              ##   4  ,Swansea City
+(26)  MF  Souaibou Marou              ##   3  ,Coton Sport
+(6)   FW  Moumi Ngamaleu              ##  42  ,Dynamo Moscow
+(9)   FW  Jean-Pierre Nsame           ##   4  ,Young Boys
+(10)  FW  Vincent Aboubakar           ##  92  ,Al-Nassr
+(11)  FW  Christian Bassogog          ##  44  ,Shanghai Shenhua
+(12)  FW  Karl Toko Ekambi            ##  52  ,Lyon
+(13)  FW  Eric Maxim Choupo-Moting    ##  70  ,Bayern Munich
+(20)  FW  Bryan Mbeumo                ##   4  ,Brentford

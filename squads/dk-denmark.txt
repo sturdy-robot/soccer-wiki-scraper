@@ -1,0 +1,31 @@
+
+##############################
+# Denmark (DNK) 
+#   - 26 players
+
+(1)   GK  Kasper Schmeichel      ##   86  ,Nice
+(16)  GK  Oliver Christensen     ##    1  ,Hertha BSC
+(22)  GK  Frederik Rønnow        ##    8  ,Union Berlin
+(2)   DF  Joachim Andersen       ##   19  ,Crystal Palace
+(3)   DF  Victor Nelsson         ##    7  ,Galatasaray
+(4)   DF  Simon Kjær             ##  121  ,Milan
+(5)   DF  Joakim Mæhle           ##   31  ,Atalanta
+(6)   DF  Andreas Christensen    ##   58  ,Barcelona
+(13)  DF  Rasmus Kristensen      ##   10  ,Leeds United
+(17)  DF  Jens Stryger Larsen    ##   49  ,Trabzonspor
+(18)  DF  Daniel Wass            ##   44  ,Brøndby
+(26)  DF  Alexander Bah          ##    4  ,Benfica
+(7)   MF  Mathias Jensen         ##   20  ,Brentford
+(8)   MF  Thomas Delaney         ##   71  ,Sevilla
+(10)  MF  Christian Eriksen      ##  117  ,Manchester United
+(11)  MF  Andreas Skov Olsen     ##   23  ,Club Brugge
+(14)  MF  Mikkel Damsgaard       ##   18  ,Brentford
+(15)  MF  Christian Nørgaard     ##   17  ,Brentford
+(23)  MF  Pierre-Emile Højbjerg  ##   60  ,Tottenham Hotspur
+(24)  MF  Robert Skov            ##   11  ,1899 Hoffenheim
+(25)  MF  Jesper Lindstrøm       ##    6  ,Eintracht Frankfurt
+(9)   FW  Martin Braithwaite     ##   62  ,Espanyol
+(12)  FW  Kasper Dolberg         ##   37  ,Sevilla
+(19)  FW  Jonas Wind             ##   15  ,VfL Wolfsburg
+(20)  FW  Yussuf Poulsen         ##   68  ,RB Leipzig
+(21)  FW  Andreas Cornelius      ##   41  ,Copenhagen

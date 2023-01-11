@@ -1,0 +1,31 @@
+
+##############################
+# England (ENG) 
+#   - 26 players
+
+(1)   GK  Jordan Pickford         ##  45  ,Everton
+(13)  GK  Nick Pope               ##  10  ,Newcastle United
+(23)  GK  Aaron Ramsdale          ##   3  ,Arsenal
+(2)   DF  Kyle Walker             ##  70  ,Manchester City
+(3)   DF  Luke Shaw               ##  23  ,Manchester United
+(5)   DF  John Stones             ##  59  ,Manchester City
+(6)   DF  Harry Maguire           ##  48  ,Manchester United
+(12)  DF  Kieran Trippier         ##  37  ,Newcastle United
+(15)  DF  Eric Dier               ##  47  ,Tottenham Hotspur
+(16)  DF  Conor Coady             ##  10  ,Everton
+(18)  DF  Trent Alexander-Arnold  ##  17  ,Liverpool
+(21)  DF  Ben White               ##   4  ,Arsenal
+(4)   MF  Declan Rice             ##  34  ,West Ham United
+(8)   MF  Jordan Henderson        ##  70  ,Liverpool
+(14)  MF  Kalvin Phillips         ##  23  ,Manchester City
+(19)  MF  Mason Mount             ##  32  ,Chelsea
+(20)  MF  Phil Foden              ##  18  ,Manchester City
+(22)  MF  Jude Bellingham         ##  17  ,Borussia Dortmund
+(25)  MF  James Maddison          ##   1  ,Leicester City
+(26)  MF  Conor Gallagher         ##   4  ,Chelsea
+(7)   FW  Jack Grealish           ##  24  ,Manchester City
+(9)   FW  Harry Kane              ##  75  ,Tottenham Hotspur
+(10)  FW  Raheem Sterling         ##  79  ,Chelsea
+(11)  FW  Marcus Rashford         ##  46  ,Manchester United
+(17)  FW  Bukayo Saka             ##  20  ,Arsenal
+(24)  FW  Callum Wilson           ##   4  ,Newcastle United

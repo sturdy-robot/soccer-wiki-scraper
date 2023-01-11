@@ -1,0 +1,31 @@
+
+##############################
+# Poland (POL) 
+#   - 26 players
+
+(1)   GK  Wojciech Szczęsny      ##   66  ,Juventus
+(12)  GK  Łukasz Skorupski       ##    8  ,Bologna
+(22)  GK  Kamil Grabara          ##    1  ,Copenhagen
+(2)   DF  Matty Cash             ##    7  ,Aston Villa
+(3)   DF  Artur Jędrzejczyk      ##   40  ,Legia Warsaw
+(4)   DF  Mateusz Wieteska       ##    2  ,Clermont
+(5)   DF  Jan Bednarek           ##   45  ,Aston Villa
+(14)  DF  Jakub Kiwior           ##    5  ,Spezia
+(15)  DF  Kamil Glik             ##   99  ,Benevento
+(18)  DF  Bartosz Bereszyński    ##   46  ,Sampdoria
+(25)  DF  Robert Gumny           ##    5  ,FC Augsburg
+(6)   MF  Krystian Bielik        ##    5  ,Birmingham City
+(8)   MF  Damian Szymański       ##    9  ,AEK Athens
+(10)  MF  Grzegorz Krychowiak    ##   94  ,Al-Shabab
+(11)  MF  Kamil Grosicki         ##   87  ,Pogoń Szczecin
+(13)  MF  Jakub Kamiński         ##    4  ,VfL Wolfsburg
+(17)  MF  Szymon Żurkowski       ##    7  ,Fiorentina
+(19)  MF  Sebastian Szymański    ##   18  ,Feyenoord
+(20)  MF  Piotr Zieliński        ##   74  ,Napoli
+(21)  MF  Nicola Zalewski        ##    7  ,Roma
+(24)  MF  Przemysław Frankowski  ##   26  ,Lens
+(26)  MF  Michał Skóraś          ##    1  ,Lech Poznań
+(7)   FW  Arkadiusz Milik        ##   64  ,Juventus
+(9)   FW  Robert Lewandowski     ##  134  ,Barcelona
+(16)  FW  Karol Świderski        ##   18  ,Charlotte FC
+(23)  FW  Krzysztof Piątek       ##   25  ,Salernitana

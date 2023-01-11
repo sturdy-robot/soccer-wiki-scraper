@@ -1,0 +1,31 @@
+
+##############################
+# Argentina (ARG) 
+#   - 26 players
+
+(1)   GK  Franco Armani        ##   18  ,River Plate
+(12)  GK  Gerónimo Rulli       ##    4  ,Villarreal
+(23)  GK  Emiliano Martínez    ##   19  ,Aston Villa
+(2)   DF  Juan Foyth           ##   16  ,Villarreal
+(3)   DF  Nicolás Tagliafico   ##   42  ,Lyon
+(4)   DF  Gonzalo Montiel      ##   18  ,Sevilla
+(6)   DF  Germán Pezzella      ##   32  ,Real Betis
+(13)  DF  Cristian Romero      ##   12  ,Tottenham Hotspur
+(19)  DF  Nicolás Otamendi     ##   93  ,Benfica
+(25)  DF  Lisandro Martínez    ##   10  ,Manchester United
+(26)  DF  Nahuel Molina        ##   20  ,Atlético Madrid
+(5)   MF  Leandro Paredes      ##   46  ,Juventus
+(7)   MF  Rodrigo De Paul      ##   44  ,Atlético Madrid
+(8)   MF  Marcos Acuña         ##   43  ,Sevilla
+(14)  MF  Exequiel Palacios    ##   20  ,Bayer Leverkusen
+(16)  MF  Thiago Almada        ##    1  ,Atlanta United FC
+(17)  MF  Papu Gómez           ##   15  ,Sevilla
+(18)  MF  Guido Rodríguez      ##   26  ,Real Betis
+(20)  MF  Alexis Mac Allister  ##    8  ,Brighton & Hove Albion
+(24)  MF  Enzo Fernández       ##    3  ,Benfica
+(9)   FW  Julián Álvarez       ##   12  ,Manchester City
+(10)  FW  Lionel Messi         ##  165  ,Paris Saint-Germain
+(11)  FW  Ángel Di María       ##  124  ,Juventus
+(15)  FW  Ángel Correa         ##   22  ,Atlético Madrid
+(21)  FW  Paulo Dybala         ##   34  ,Roma
+(22)  FW  Lautaro Martínez     ##   40  ,Internazionale

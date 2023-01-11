@@ -1,0 +1,31 @@
+
+##############################
+# Ecuador (ECU) 
+#   - 26 players
+
+(1)   GK  Hernán Galíndez      ##  12  ,Aucas
+(12)  GK  Moisés Ramírez       ##   2  ,Independiente del Valle
+(22)  GK  Alexander Domínguez  ##  68  ,LDU Quito
+(2)   DF  Félix Torres         ##  17  ,Santos Laguna
+(3)   DF  Piero Hincapié       ##  21  ,Bayer Leverkusen
+(4)   DF  Robert Arboleda      ##  33  ,São Paulo
+(6)   DF  William Pacho        ##   0  ,Antwerp
+(7)   DF  Pervis Estupiñán     ##  28  ,Brighton & Hove Albion
+(14)  DF  Xavier Arreaga       ##  18  ,Seattle Sounders FC
+(17)  DF  Ángelo Preciado      ##  24  ,Genk
+(18)  DF  Diego Palacios       ##  12  ,Los Angeles FC
+(25)  DF  Jackson Porozo       ##   5  ,Troyes
+(5)   MF  José Cifuentes       ##  11  ,Los Angeles FC
+(8)   MF  Carlos Gruezo        ##  46  ,FC Augsburg
+(9)   MF  Ayrton Preciado      ##  27  ,Santos Laguna
+(10)  MF  Romario Ibarra       ##  25  ,Pachuca
+(15)  MF  Ángel Mena           ##  46  ,León
+(16)  MF  Jeremy Sarmiento     ##   9  ,Brighton & Hove Albion
+(19)  MF  Gonzalo Plata        ##  30  ,Valladolid
+(20)  MF  Sebas Méndez         ##  32  ,Los Angeles FC
+(21)  MF  Alan Franco          ##  25  ,Talleres
+(23)  MF  Moisés Caicedo       ##  25  ,Brighton & Hove Albion
+(11)  FW  Michael Estrada      ##  36  ,Cruz Azul
+(13)  FW  Enner Valencia       ##  74  ,Fenerbahçe
+(24)  FW  Djorkaeff Reasco     ##   4  ,Newell's Old Boys
+(26)  FW  Kevin Rodríguez      ##   1  ,Imbabura

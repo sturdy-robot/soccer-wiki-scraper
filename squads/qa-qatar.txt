@@ -1,0 +1,31 @@
+
+##############################
+# Qatar (QAT) 
+#   - 26 players
+
+(1)   GK  Saad Al-Sheeb      ##   76  ,Al-Sadd
+(21)  GK  Yousef Hassan      ##    7  ,Al-Gharafa
+(22)  GK  Meshaal Barsham    ##   20  ,Al-Sadd
+(2)   DF  Ró-Ró              ##   80  ,Al-Sadd
+(4)   DF  Mohammed Waad      ##   21  ,Al-Sadd
+(5)   DF  Tarek Salman       ##   58  ,Al-Sadd
+(13)  DF  Musab Kheder       ##   30  ,Al-Sadd
+(14)  DF  Homam Ahmed        ##   29  ,Al-Gharafa
+(15)  DF  Bassam Al-Rawi     ##   58  ,Al-Duhail
+(16)  DF  Boualem Khoukhi    ##  105  ,Al-Sadd
+(17)  DF  Ismaeel Mohammad   ##   70  ,Al-Duhail
+(3)   MF  Abdelkarim Hassan  ##  130  ,Al-Sadd
+(6)   MF  Abdulaziz Hatem    ##  107  ,Al-Rayyan
+(8)   MF  Ali Assadalla      ##   59  ,Al-Sadd
+(10)  MF  Hassan Al-Haydos   ##  169  ,Al-Sadd
+(12)  MF  Karim Boudiaf      ##  115  ,Al-Duhail
+(20)  MF  Salem Al-Hajri     ##   22  ,Al-Sadd
+(23)  MF  Assim Madibo       ##   43  ,Al-Duhail
+(24)  MF  Naif Al-Hadhrami   ##    1  ,Al-Rayyan
+(25)  MF  Jassem Gaber       ##    0  ,Al-Arabi
+(26)  MF  Mostafa Meshaal    ##    1  ,Al-Sadd
+(7)   FW  Ahmed Alaaeldin    ##   47  ,Al-Gharafa
+(9)   FW  Mohammed Muntari   ##   48  ,Al-Duhail
+(11)  FW  Akram Afif         ##   89  ,Al-Sadd
+(18)  FW  Khalid Muneer      ##    2  ,Al-Wakrah
+(19)  FW  Almoez Ali         ##   85  ,Al-Duhail

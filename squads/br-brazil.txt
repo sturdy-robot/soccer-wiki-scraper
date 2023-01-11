@@ -1,0 +1,31 @@
+
+##############################
+# Brazil (BRA) 
+#   - 26 players
+
+(1)   GK  Alisson             ##   57  ,Liverpool
+(12)  GK  Weverton            ##    8  ,Palmeiras
+(23)  GK  Ederson             ##   18  ,Manchester City
+(2)   DF  Danilo              ##   46  ,Juventus
+(3)   DF  Thiago Silva        ##  109  ,Chelsea
+(4)   DF  Marquinhos          ##   71  ,Paris Saint-Germain
+(6)   DF  Alex Sandro         ##   37  ,Juventus
+(13)  DF  Dani Alves          ##  124  ,UNAM
+(14)  DF  Éder Militão        ##   23  ,Real Madrid
+(16)  DF  Alex Telles         ##    8  ,Sevilla
+(24)  DF  Bremer              ##    1  ,Juventus
+(5)   MF  Casemiro            ##   65  ,Manchester United
+(7)   MF  Lucas Paquetá       ##   35  ,West Ham United
+(8)   MF  Fred                ##   28  ,Manchester United
+(15)  MF  Fabinho             ##   28  ,Liverpool
+(17)  MF  Bruno Guimarães     ##    8  ,Newcastle United
+(22)  MF  Éverton Ribeiro     ##   21  ,Flamengo
+(9)   FW  Richarlison         ##   38  ,Tottenham Hotspur
+(10)  FW  Neymar              ##  121  ,Paris Saint-Germain
+(11)  FW  Raphinha            ##   11  ,Barcelona
+(18)  FW  Gabriel Jesus       ##   56  ,Arsenal
+(19)  FW  Antony              ##   11  ,Manchester United
+(20)  FW  Vinícius Júnior     ##   16  ,Real Madrid
+(21)  FW  Rodrygo             ##    7  ,Real Madrid
+(25)  FW  Pedro               ##    2  ,Flamengo
+(26)  FW  Gabriel Martinelli  ##    3  ,Arsenal

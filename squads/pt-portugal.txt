@@ -1,0 +1,31 @@
+
+##############################
+# Portugal (POR) 
+#   - 26 players
+
+(1)   GK  Rui Patrício       ##  105  ,Roma
+(12)  GK  José Sá            ##    0  ,Wolverhampton Wanderers
+(22)  GK  Diogo Costa        ##    7  ,Porto
+(2)   DF  Diogo Dalot        ##    7  ,Manchester United
+(3)   DF  Pepe               ##  129  ,Porto
+(4)   DF  Rúben Dias         ##   40  ,Manchester City
+(5)   DF  Raphaël Guerreiro  ##   57  ,Borussia Dortmund
+(13)  DF  Danilo Pereira     ##   63  ,Paris Saint-Germain
+(19)  DF  Nuno Mendes        ##   17  ,Paris Saint-Germain
+(20)  DF  João Cancelo       ##   37  ,Manchester City
+(24)  DF  António Silva      ##    1  ,Benfica
+(6)   MF  João Palhinha      ##   15  ,Fulham
+(8)   MF  Bruno Fernandes    ##   49  ,Manchester United
+(14)  MF  William Carvalho   ##   76  ,Real Betis
+(16)  MF  Vitinha            ##    5  ,Paris Saint-Germain
+(17)  MF  João Mário         ##   53  ,Benfica
+(18)  MF  Rúben Neves        ##   32  ,Wolverhampton Wanderers
+(23)  MF  Matheus Nunes      ##    9  ,Wolverhampton Wanderers
+(25)  MF  Otávio             ##    8  ,Porto
+(7)   FW  Cristiano Ronaldo  ##  191  ,Manchester United
+(9)   FW  André Silva        ##   52  ,RB Leipzig
+(10)  FW  Bernardo Silva     ##   73  ,Manchester City
+(11)  FW  João Félix         ##   24  ,Atlético Madrid
+(15)  FW  Rafael Leão        ##   11  ,Milan
+(21)  FW  Ricardo Horta      ##    6  ,Braga
+(26)  FW  Gonçalo Ramos      ##    1  ,Benfica

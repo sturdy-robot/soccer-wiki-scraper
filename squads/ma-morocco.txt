@@ -1,0 +1,31 @@
+
+##############################
+# Morocco (MAR) 
+#   - 26 players
+
+(1)   GK  Yassine Bounou        ##  46  ,Sevilla
+(12)  GK  Munir Mohamedi        ##  43  ,Al-Wehda
+(22)  GK  Ahmed Reda Tagnaouti  ##   3  ,Wydad AC
+(2)   DF  Achraf Hakimi         ##  54  ,Paris Saint-Germain
+(3)   DF  Noussair Mazraoui     ##  15  ,Bayern Munich
+(5)   DF  Nayef Aguerd          ##  22  ,West Ham United
+(6)   DF  Romain Saïss          ##  66  ,Beşiktaş
+(18)  DF  Jawad El Yamiq        ##  12  ,Valladolid
+(20)  DF  Achraf Dari           ##   4  ,Brest
+(24)  DF  Badr Benoun           ##   3  ,Qatar SC
+(25)  DF  Yahia Attiyat Allah   ##   2  ,Wydad AC
+(4)   MF  Sofyan Amrabat        ##  39  ,Fiorentina
+(7)   MF  Hakim Ziyech          ##  43  ,Chelsea
+(8)   MF  Azzedine Ounahi       ##  10  ,Angers
+(10)  MF  Anass Zaroury         ##   1  ,Burnley
+(13)  MF  Ilias Chair           ##  11  ,Queens Park Rangers
+(14)  MF  Zakaria Aboukhlal     ##  12  ,Toulouse
+(15)  MF  Selim Amallah         ##  24  ,Standard Liège
+(17)  MF  Sofiane Boufal        ##  32  ,Angers
+(23)  MF  Bilal El Khannous     ##   0  ,Genk
+(26)  MF  Yahya Jabrane         ##   5  ,Wydad AC
+(9)   FW  Abderrazak Hamdallah  ##  18  ,Al-Ittihad
+(11)  FW  Abdelhamid Sabiri     ##   2  ,Sampdoria
+(16)  FW  Abde Ezzalzouli       ##   2  ,Osasuna
+(19)  FW  Youssef En-Nesyri     ##  50  ,Sevilla
+(21)  FW  Walid Cheddira        ##   2  ,Bari

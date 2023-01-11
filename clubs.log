@@ -1,0 +1,206 @@
+01/10/2023 08:15:22 PM - INFO - Started
+01/10/2023 08:15:22 PM - DEBUG - Getting https://en.wikipedia.org/wiki/List_of_top-division_football_clubs_in_CAF_countries
+01/10/2023 08:15:22 PM - DEBUG - Starting new HTTPS connection (1): en.wikipedia.org:443
+01/10/2023 08:15:22 PM - DEBUG - https://en.wikipedia.org:443 "GET /wiki/List_of_top-division_football_clubs_in_CAF_countries HTTP/1.1" 200 59036
+01/10/2023 08:15:23 PM - DEBUG - Countries: ['Algeria', 'Angola', 'Benin', 'Botswana', 'Burkina Faso', 'Burundi', 'Cameroon', 'Cape Verde', 'Central African Republic', 'Chad', 'Comoros', 'Congo', 'Democratic Republic of the Congo', 'Djibouti', 'Egypt', 'Equatorial Guinea', 'Eritrea', 'Eswatini', 'Ethiopia', 'Gabon', 'Gambia', 'Ghana', 'Guinea', 'Guinea-Bissau', 'Ivory Coast', 'Kenya', 'Lesotho', 'Liberia', 'Libya', 'Madagascar', 'Malawi', 'Mali', 'Mauritania', 'Mauritius', 'Morocco', 'Mozambique', 'Namibia', 'Niger', 'Nigeria', 'Réunion', 'Rwanda', 'São Tomé and Príncipe', 'Senegal', 'Seychelles', 'Sierra Leone', 'Somalia', 'South Africa', 'South Sudan', 'Sudan', 'Tanzania', 'Togo', 'Tunisia', 'Uganda', 'Zambia', 'Zanzibar', 'Zimbabwe']
+01/10/2023 08:15:23 PM - DEBUG - Rows: ['ASO Chlef', 'Chlef']
+01/10/2023 08:15:23 PM - DEBUG - Starting new HTTPS connection (1): en.wikipedia.org:443
+01/10/2023 08:15:24 PM - DEBUG - https://en.wikipedia.org:443 "GET /wiki/ASO_Chlef HTTP/1.1" 200 22671
+01/10/2023 08:15:24 PM - DEBUG - Getting stadium for ASO Chlef
+01/10/2023 08:15:26 PM - DEBUG - Rows: ['CR Belouizdad', 'Algiers']
+01/10/2023 08:15:26 PM - DEBUG - Starting new HTTPS connection (1): en.wikipedia.org:443
+01/10/2023 08:15:26 PM - DEBUG - https://en.wikipedia.org:443 "GET /wiki/CR_Belouizdad HTTP/1.1" 200 42700
+01/10/2023 08:15:26 PM - DEBUG - Getting stadium for CR Belouizdad
+01/10/2023 08:15:28 PM - DEBUG - Rows: ['CS Constantine', 'Constantine']
+01/10/2023 08:15:28 PM - DEBUG - Starting new HTTPS connection (1): en.wikipedia.org:443
+01/10/2023 08:15:29 PM - DEBUG - https://en.wikipedia.org:443 "GET /wiki/CS_Constantine HTTP/1.1" 200 28281
+01/10/2023 08:15:29 PM - DEBUG - Getting stadium for CS Constantine
+01/10/2023 08:15:31 PM - DEBUG - Rows: ['ES Sétif', 'Sétif']
+01/10/2023 08:15:31 PM - DEBUG - Starting new HTTPS connection (1): en.wikipedia.org:443
+01/10/2023 08:15:32 PM - DEBUG - https://en.wikipedia.org:443 "GET /wiki/ES_S%C3%A9tif HTTP/1.1" 200 37908
+01/10/2023 08:15:32 PM - DEBUG - Getting stadium for ES Sétif
+01/10/2023 08:15:34 PM - DEBUG - Rows: ['HB Chelghoum Laid', 'Chelghoum Laid']
+01/10/2023 08:15:34 PM - DEBUG - Starting new HTTPS connection (1): en.wikipedia.org:443
+01/10/2023 08:15:35 PM - DEBUG - https://en.wikipedia.org:443 "GET /wiki/HB_Chelghoum_Laid HTTP/1.1" 200 None
+01/10/2023 08:15:35 PM - DEBUG - Getting stadium for HB Chelghoum Laïd
+01/10/2023 08:15:37 PM - DEBUG - Rows: ['JS Kabylie', 'Tizi Ouzou']
+01/10/2023 08:15:37 PM - DEBUG - Starting new HTTPS connection (1): en.wikipedia.org:443
+01/10/2023 08:15:37 PM - DEBUG - https://en.wikipedia.org:443 "GET /wiki/JS_Kabylie HTTP/1.1" 200 None
+01/10/2023 08:15:38 PM - DEBUG - Getting stadium for JS Kabylie
+01/10/2023 08:15:40 PM - DEBUG - Rows: ['JS Saoura', 'Béchar']
+01/10/2023 08:15:40 PM - DEBUG - Starting new HTTPS connection (1): en.wikipedia.org:443
+01/10/2023 08:15:40 PM - DEBUG - https://en.wikipedia.org:443 "GET /wiki/JS_Saoura HTTP/1.1" 200 None
+01/10/2023 08:15:41 PM - DEBUG - Getting stadium for JS Saoura
+01/10/2023 08:15:43 PM - DEBUG - Rows: ['MC Alger', 'Algiers']
+01/10/2023 08:15:43 PM - DEBUG - Starting new HTTPS connection (1): en.wikipedia.org:443
+01/10/2023 08:15:43 PM - DEBUG - https://en.wikipedia.org:443 "GET /wiki/MC_Alger HTTP/1.1" 200 None
+01/10/2023 08:15:43 PM - DEBUG - Getting stadium for MC Alger
+01/10/2023 08:15:45 PM - DEBUG - Rows: ['MC El Bayadh', 'El Bayadh']
+01/10/2023 08:15:45 PM - DEBUG - Starting new HTTPS connection (1): en.wikipedia.org:443
+01/10/2023 08:15:46 PM - DEBUG - https://en.wikipedia.org:443 "GET /wiki/MC_El_Bayadh HTTP/1.1" 200 None
+01/10/2023 08:15:46 PM - DEBUG - Getting stadium for MC El Bayadh
+01/10/2023 08:15:48 PM - DEBUG - Rows: ['MC Oran', 'Oran']
+01/10/2023 08:15:48 PM - DEBUG - Starting new HTTPS connection (1): en.wikipedia.org:443
+01/10/2023 08:15:50 PM - DEBUG - https://en.wikipedia.org:443 "GET /wiki/MC_Oran HTTP/1.1" 200 None
+01/10/2023 08:15:50 PM - DEBUG - Getting stadium for MC Oran
+01/10/2023 08:15:52 PM - DEBUG - Rows: ['NC Magra', 'Sétif']
+01/10/2023 08:15:52 PM - DEBUG - Starting new HTTPS connection (1): en.wikipedia.org:443
+01/10/2023 08:15:53 PM - DEBUG - https://en.wikipedia.org:443 "GET /wiki/NC_Magra HTTP/1.1" 200 None
+01/10/2023 08:15:53 PM - DEBUG - Getting stadium for NC Magra
+01/10/2023 08:15:55 PM - DEBUG - Rows: ['Paradou AC', 'Algiers']
+01/10/2023 08:15:55 PM - DEBUG - Starting new HTTPS connection (1): en.wikipedia.org:443
+01/10/2023 08:15:56 PM - DEBUG - https://en.wikipedia.org:443 "GET /wiki/Paradou_AC HTTP/1.1" 200 28267
+01/10/2023 08:15:56 PM - DEBUG - Getting stadium for Paradou AC
+01/10/2023 08:15:58 PM - DEBUG - Rows: ['RC Arbaâ', 'Larbaâ']
+01/10/2023 08:15:58 PM - DEBUG - Starting new HTTPS connection (1): en.wikipedia.org:443
+01/10/2023 08:15:58 PM - DEBUG - https://en.wikipedia.org:443 "GET /wiki/RC_Arba%C3%A2 HTTP/1.1" 200 None
+01/10/2023 08:15:59 PM - DEBUG - Getting stadium for RC Arbaâ
+01/10/2023 08:16:00 PM - DEBUG - Rows: ['US Biskra', 'Biskra']
+01/10/2023 08:16:00 PM - DEBUG - Starting new HTTPS connection (1): en.wikipedia.org:443
+01/10/2023 08:16:01 PM - DEBUG - https://en.wikipedia.org:443 "GET /wiki/US_Biskra HTTP/1.1" 200 None
+01/10/2023 08:16:01 PM - DEBUG - Getting stadium for US Biskra
+01/10/2023 08:16:03 PM - DEBUG - Rows: ['USM Alger', 'Algiers']
+01/10/2023 08:16:03 PM - DEBUG - Starting new HTTPS connection (1): en.wikipedia.org:443
+01/10/2023 08:16:03 PM - DEBUG - https://en.wikipedia.org:443 "GET /wiki/USM_Alger HTTP/1.1" 200 None
+01/10/2023 08:16:04 PM - DEBUG - Getting stadium for USM Alger
+01/10/2023 08:16:06 PM - DEBUG - Rows: ['USM Khenchela', 'Khenchela']
+01/10/2023 08:16:06 PM - DEBUG - Starting new HTTPS connection (1): en.wikipedia.org:443
+01/10/2023 08:16:07 PM - DEBUG - https://en.wikipedia.org:443 "GET /wiki/USM_Khenchela HTTP/1.1" 200 None
+01/10/2023 08:16:07 PM - DEBUG - Getting stadium for USM Khenchela
+01/10/2023 08:16:09 PM - DEBUG - Rows: ['Académica do Lobito', 'Lobito']
+01/10/2023 08:16:09 PM - DEBUG - Starting new HTTPS connection (1): en.wikipedia.org:443
+01/10/2023 08:16:10 PM - DEBUG - https://en.wikipedia.org:443 "GET /wiki/Acad%C3%A9mica_Petr%C3%B3leos_do_Lobito HTTP/1.1" 200 None
+01/10/2023 08:16:10 PM - DEBUG - Getting stadium for Académica Petróleos do Lobito
+01/10/2023 08:16:11 PM - DEBUG - Rows: ['Bravos do Maquis', 'Luena']
+01/10/2023 08:16:11 PM - DEBUG - Starting new HTTPS connection (1): en.wikipedia.org:443
+01/10/2023 08:16:12 PM - DEBUG - https://en.wikipedia.org:443 "GET /wiki/F.C._Bravos_do_Maquis HTTP/1.1" 200 None
+01/10/2023 08:16:12 PM - DEBUG - Getting stadium for F.C. Bravos do Maquis
+01/10/2023 08:16:14 PM - DEBUG - Rows: ['Cuando Cubango', 'Kuito']
+01/10/2023 08:16:14 PM - DEBUG - Starting new HTTPS connection (1): en.wikipedia.org:443
+01/10/2023 08:16:15 PM - DEBUG - https://en.wikipedia.org:443 "GET /wiki/Cuando_Cubango_FC HTTP/1.1" 200 None
+01/10/2023 08:16:15 PM - DEBUG - Getting stadium for Cuando Cubango FC
+01/10/2023 08:16:17 PM - DEBUG - Rows: ['Desportivo da Huíla', 'Lubango']
+01/10/2023 08:16:17 PM - DEBUG - Starting new HTTPS connection (1): en.wikipedia.org:443
+01/10/2023 08:16:18 PM - DEBUG - https://en.wikipedia.org:443 "GET /wiki/C.D._Hu%C3%ADla HTTP/1.1" 200 None
+01/10/2023 08:16:18 PM - DEBUG - Getting stadium for C.D. Huíla
+01/10/2023 08:16:20 PM - DEBUG - Rows: ['Interclube', 'Luanda']
+01/10/2023 08:16:20 PM - DEBUG - Starting new HTTPS connection (1): en.wikipedia.org:443
+01/10/2023 08:16:20 PM - DEBUG - https://en.wikipedia.org:443 "GET /wiki/G.D._Interclube HTTP/1.1" 200 22577
+01/10/2023 08:16:21 PM - DEBUG - Getting stadium for G.D. Interclube
+01/10/2023 08:16:22 PM - DEBUG - Rows: ['Kabuscorp', 'Luanda']
+01/10/2023 08:16:22 PM - DEBUG - Starting new HTTPS connection (1): en.wikipedia.org:443
+01/10/2023 08:16:23 PM - DEBUG - https://en.wikipedia.org:443 "GET /wiki/Kabuscorp_S.C.P. HTTP/1.1" 200 None
+01/10/2023 08:16:23 PM - DEBUG - Getting stadium for Kabuscorp S.C.P.
+01/10/2023 08:16:25 PM - DEBUG - Rows: ['Lunda Sul', 'Saurimo']
+01/10/2023 08:16:25 PM - DEBUG - Starting new HTTPS connection (1): en.wikipedia.org:443
+01/10/2023 08:16:26 PM - DEBUG - https://en.wikipedia.org:443 "GET /wiki/C.D._Lunda_Sul HTTP/1.1" 200 None
+01/10/2023 08:16:26 PM - DEBUG - Getting stadium for C.D. Lunda Sul
+01/10/2023 08:16:27 PM - DEBUG - Rows: ['Petro de Luanda', 'Luanda']
+01/10/2023 08:16:27 PM - DEBUG - Starting new HTTPS connection (1): en.wikipedia.org:443
+01/10/2023 08:16:28 PM - DEBUG - https://en.wikipedia.org:443 "GET /wiki/Atl%C3%A9tico_Petr%C3%B3leos_de_Luanda HTTP/1.1" 200 None
+01/10/2023 08:16:28 PM - DEBUG - Getting stadium for Atlético Petróleos de Luanda
+01/10/2023 08:16:30 PM - DEBUG - Rows: ['Primeiro de Agosto', 'Luanda']
+01/10/2023 08:16:30 PM - DEBUG - Starting new HTTPS connection (1): en.wikipedia.org:443
+01/10/2023 08:16:31 PM - DEBUG - https://en.wikipedia.org:443 "GET /wiki/C.D._Primeiro_de_Agosto HTTP/1.1" 200 None
+01/10/2023 08:16:31 PM - DEBUG - Getting stadium for C.D. Primeiro de Agosto
+01/10/2023 08:16:33 PM - DEBUG - Rows: ['Recreativo da Caála', 'Huambo']
+01/10/2023 08:16:33 PM - DEBUG - Starting new HTTPS connection (1): en.wikipedia.org:443
+01/10/2023 08:16:34 PM - DEBUG - https://en.wikipedia.org:443 "GET /wiki/C.R._Ca%C3%A1la HTTP/1.1" 200 None
+01/10/2023 08:16:34 PM - DEBUG - Getting stadium for C.R. Caála
+01/10/2023 08:16:36 PM - DEBUG - Rows: ['Recreativo do Libolo', 'Libolo']
+01/10/2023 08:16:36 PM - DEBUG - Starting new HTTPS connection (1): en.wikipedia.org:443
+01/10/2023 08:16:36 PM - DEBUG - https://en.wikipedia.org:443 "GET /wiki/C.R.D._Libolo HTTP/1.1" 200 None
+01/10/2023 08:16:37 PM - DEBUG - Getting stadium for C.R.D. Libolo
+01/10/2023 08:16:38 PM - DEBUG - Rows: ['Sagrada Esperança', 'Dundo']
+01/10/2023 08:16:38 PM - DEBUG - Starting new HTTPS connection (1): en.wikipedia.org:443
+01/10/2023 08:16:38 PM - DEBUG - https://en.wikipedia.org:443 "GET /wiki/G.D._Sagrada_Esperan%C3%A7a HTTP/1.1" 200 None
+01/10/2023 08:16:39 PM - DEBUG - Getting stadium for G.D. Sagrada Esperança
+01/10/2023 08:16:41 PM - DEBUG - Rows: ['Sporting Benguela', 'Benguela']
+01/10/2023 08:16:41 PM - DEBUG - Starting new HTTPS connection (1): en.wikipedia.org:443
+01/10/2023 08:16:41 PM - DEBUG - https://en.wikipedia.org:443 "GET /wiki/Sporting_Clube_de_Benguela HTTP/1.1" 200 None
+01/10/2023 08:16:42 PM - DEBUG - Getting stadium for Sporting Clube de Benguela
+01/10/2023 08:16:43 PM - DEBUG - Rows: ['Sporting Cabinda', 'Cabinda']
+01/10/2023 08:16:43 PM - DEBUG - Starting new HTTPS connection (1): en.wikipedia.org:443
+01/10/2023 08:16:44 PM - DEBUG - https://en.wikipedia.org:443 "GET /wiki/Sporting_Clube_de_Cabinda HTTP/1.1" 200 None
+01/10/2023 08:16:44 PM - DEBUG - Getting stadium for Sporting Clube de Cabinda
+01/10/2023 08:16:46 PM - DEBUG - Rows: ['Wiliete', 'Benguela']
+01/10/2023 08:16:46 PM - DEBUG - Starting new HTTPS connection (1): en.wikipedia.org:443
+01/10/2023 08:16:47 PM - DEBUG - https://en.wikipedia.org:443 "GET /wiki/Wiliete_S.C. HTTP/1.1" 200 None
+01/10/2023 08:16:47 PM - DEBUG - Getting stadium for Wiliete S.C.
+01/10/2023 08:16:49 PM - DEBUG - Rows: ["Tonnerre d'Abomey FC", 'Abomey']
+01/10/2023 08:16:49 PM - DEBUG - Starting new HTTPS connection (1): en.wikipedia.org:443
+01/10/2023 08:16:50 PM - DEBUG - https://en.wikipedia.org:443 "GET /wiki/Tonnerre_d%27Abomey_FC HTTP/1.1" 200 None
+01/10/2023 08:16:50 PM - DEBUG - Getting stadium for Tonnerre d'Abomey FC
+01/10/2023 08:16:50 PM - DEBUG - Rows: ['Adjobi FC', 'Sakété']
+01/10/2023 08:16:50 PM - DEBUG - Starting new HTTPS connection (1): en.wikipedia.org:443
+01/10/2023 08:16:51 PM - DEBUG - https://en.wikipedia.org:443 "GET /wiki/Adjobi_FC HTTP/1.1" 200 None
+01/10/2023 08:16:51 PM - DEBUG - Getting stadium for ESAE FC
+01/10/2023 08:16:52 PM - DEBUG - Rows: ['ASPAC FC', 'Cotonou']
+01/10/2023 08:16:52 PM - DEBUG - Starting new HTTPS connection (1): en.wikipedia.org:443
+01/10/2023 08:16:53 PM - DEBUG - https://en.wikipedia.org:443 "GET /wiki/ASPAC_FC HTTP/1.1" 200 None
+01/10/2023 08:16:53 PM - DEBUG - Getting stadium for ASPAC FC
+01/10/2023 08:16:54 PM - DEBUG - Rows: ['Avrankou Omnisport FC', 'Avrankou']
+01/10/2023 08:16:54 PM - DEBUG - Starting new HTTPS connection (1): en.wikipedia.org:443
+01/10/2023 08:16:55 PM - DEBUG - https://en.wikipedia.org:443 "GET /wiki/Avrankou_Omnisport_FC HTTP/1.1" 200 None
+01/10/2023 08:16:55 PM - DEBUG - Getting stadium for Avrankou Omnisport FC
+01/10/2023 08:16:56 PM - DEBUG - Rows: ['Ayema FC', 'Seme-Kpodji']
+01/10/2023 08:16:56 PM - DEBUG - Starting new HTTPS connection (1): en.wikipedia.org:443
+01/10/2023 08:16:57 PM - DEBUG - https://en.wikipedia.org:443 "GET /wiki/Ayema_FC HTTP/1.1" 200 None
+01/10/2023 08:16:57 PM - DEBUG - Getting stadium for Ayema FC
+01/10/2023 08:16:57 PM - DEBUG - Rows: ['Buffles du Borgou FC', 'Parakou']
+01/10/2023 08:16:57 PM - DEBUG - Starting new HTTPS connection (1): en.wikipedia.org:443
+01/10/2023 08:16:58 PM - DEBUG - https://en.wikipedia.org:443 "GET /wiki/Buffles_du_Borgou_FC HTTP/1.1" 200 None
+01/10/2023 08:16:58 PM - DEBUG - Getting stadium for Les Buffles du Borgou
+01/10/2023 08:17:00 PM - DEBUG - Rows: ['Energie FC', 'Seme-Kpodji']
+01/10/2023 08:17:00 PM - DEBUG - Starting new HTTPS connection (1): en.wikipedia.org:443
+01/10/2023 08:17:00 PM - DEBUG - https://en.wikipedia.org:443 "GET /wiki/Energie_FC HTTP/1.1" 200 None
+01/10/2023 08:17:00 PM - DEBUG - Getting stadium for Energie FC
+01/10/2023 08:17:01 PM - DEBUG - Rows: ['USS Kraké', 'Porto-Novo']
+01/10/2023 08:17:01 PM - DEBUG - Starting new HTTPS connection (1): en.wikipedia.org:443
+01/10/2023 08:17:02 PM - DEBUG - https://en.wikipedia.org:443 "GET /wiki/Union_Sportive_Seme_Krak%C3%A9 HTTP/1.1" 200 None
+01/10/2023 08:17:02 PM - DEBUG - Getting stadium for USS Kraké
+01/10/2023 08:17:03 PM - DEBUG - Rows: ['Mogas 90 FC', 'Cotonou']
+01/10/2023 08:17:03 PM - DEBUG - Starting new HTTPS connection (1): en.wikipedia.org:443
+01/10/2023 08:17:03 PM - DEBUG - https://en.wikipedia.org:443 "GET /wiki/Mogas_90_FC HTTP/1.1" 200 None
+01/10/2023 08:17:03 PM - DEBUG - Getting stadium for Mogas 90 FC
+01/10/2023 08:17:05 PM - DEBUG - Rows: ["AS Dragons FC de l'Ouémé", 'Porto-Novo']
+01/10/2023 08:17:05 PM - DEBUG - Starting new HTTPS connection (1): en.wikipedia.org:443
+01/10/2023 08:17:06 PM - DEBUG - https://en.wikipedia.org:443 "GET /wiki/AS_Dragons_FC_de_l%27Ou%C3%A9m%C3%A9 HTTP/1.1" 200 None
+01/10/2023 08:17:06 PM - DEBUG - Getting stadium for AS Dragons FC de l'Ouémé
+01/10/2023 08:17:07 PM - DEBUG - Rows: ['AS Oussou Saka', 'Porto-Novo']
+01/10/2023 08:17:07 PM - DEBUG - Starting new HTTPS connection (1): en.wikipedia.org:443
+01/10/2023 08:17:07 PM - DEBUG - https://en.wikipedia.org:443 "GET /wiki/Association_Sportive_Oussou_Saka HTTP/1.1" 200 None
+01/10/2023 08:17:07 PM - DEBUG - Getting stadium for AS Oussou Saka
+01/10/2023 08:17:08 PM - DEBUG - Rows: ['Panthères FC', 'Djougou']
+01/10/2023 08:17:08 PM - DEBUG - Starting new HTTPS connection (1): en.wikipedia.org:443
+01/10/2023 08:17:09 PM - DEBUG - https://en.wikipedia.org:443 "GET /wiki/Panth%C3%A8res_FC HTTP/1.1" 200 None
+01/10/2023 08:17:09 PM - DEBUG - Getting stadium for Panthères FC
+01/10/2023 08:17:10 PM - DEBUG - Rows: ['JA Plateau', 'Pobè']
+01/10/2023 08:17:10 PM - DEBUG - Starting new HTTPS connection (1): en.wikipedia.org:443
+01/10/2023 08:17:10 PM - DEBUG - https://en.wikipedia.org:443 "GET /wiki/Jeunesse_Athl%C3%A9tique_du_Plateau HTTP/1.1" 200 None
+01/10/2023 08:17:10 PM - DEBUG - Getting stadium for JA Cotonou
+01/10/2023 08:17:11 PM - DEBUG - Rows: ['AS Police', 'Porto-Novo']
+01/10/2023 08:17:11 PM - DEBUG - Starting new HTTPS connection (1): en.wikipedia.org:443
+01/10/2023 08:17:12 PM - DEBUG - https://en.wikipedia.org:443 "GET /wiki/AS_Police_(Benin) HTTP/1.1" 200 None
+01/10/2023 08:17:12 PM - DEBUG - Getting stadium for AS Police (Benin)
+01/10/2023 08:17:13 PM - DEBUG - Rows: ['Botswana Defence Force XI', 'Gaborone']
+01/10/2023 08:17:13 PM - DEBUG - Starting new HTTPS connection (1): en.wikipedia.org:443
+01/10/2023 08:17:13 PM - DEBUG - https://en.wikipedia.org:443 "GET /wiki/Botswana_Defence_Force_XI_FC HTTP/1.1" 200 None
+01/10/2023 08:17:13 PM - DEBUG - Getting stadium for Botswana Defence Force XI F.C.
+01/10/2023 08:17:14 PM - DEBUG - Rows: ['Eleven Angels', 'Francistown']
+01/10/2023 08:17:14 PM - DEBUG - Starting new HTTPS connection (1): en.wikipedia.org:443
+01/10/2023 08:17:15 PM - DEBUG - https://en.wikipedia.org:443 "GET /w/index.php?title=Eleven_Angels_F.C.&action=edit&redlink=1 HTTP/1.1" 302 0
+01/10/2023 08:17:15 PM - DEBUG - https://en.wikipedia.org:443 "GET /wiki/Eleven_Angels_F.C. HTTP/1.1" 404 None
+01/10/2023 08:17:15 PM - DEBUG - Getting stadium for Eleven Angels F.C.
+01/10/2023 08:38:44 PM - INFO - Started
+01/10/2023 08:38:44 PM - DEBUG - Getting https://en.wikipedia.org/wiki/List_of_top-division_football_clubs_in_CAF_countries
+01/10/2023 08:38:44 PM - DEBUG - Starting new HTTPS connection (1): en.wikipedia.org:443
+01/10/2023 08:38:44 PM - DEBUG - https://en.wikipedia.org:443 "GET /wiki/List_of_top-division_football_clubs_in_CAF_countries HTTP/1.1" 200 59036
+01/10/2023 08:38:45 PM - DEBUG - Countries: ['Algeria', 'Angola', 'Benin', 'Botswana', 'Burkina Faso', 'Burundi', 'Cameroon', 'Cape Verde', 'Central African Republic', 'Chad', 'Comoros', 'Congo', 'Democratic Republic of the Congo', 'Djibouti', 'Egypt', 'Equatorial Guinea', 'Eritrea', 'Eswatini', 'Ethiopia', 'Gabon', 'Gambia', 'Ghana', 'Guinea', 'Guinea-Bissau', 'Ivory Coast', 'Kenya', 'Lesotho', 'Liberia', 'Libya', 'Madagascar', 'Malawi', 'Mali', 'Mauritania', 'Mauritius', 'Morocco', 'Mozambique', 'Namibia', 'Niger', 'Nigeria', 'Réunion', 'Rwanda', 'São Tomé and Príncipe', 'Senegal', 'Seychelles', 'Sierra Leone', 'Somalia', 'South Africa', 'South Sudan', 'Sudan', 'Tanzania', 'Togo', 'Tunisia', 'Uganda', 'Zambia', 'Zanzibar', 'Zimbabwe']
+01/10/2023 08:38:45 PM - DEBUG - Rows: ['ASO Chlef', 'Chlef']
+01/10/2023 08:38:45 PM - DEBUG - Starting new HTTPS connection (1): en.wikipedia.org:443
+01/10/2023 08:38:45 PM - DEBUG - https://en.wikipedia.org:443 "GET /wiki/ASO_Chlef HTTP/1.1" 200 22671
+01/10/2023 08:38:46 PM - DEBUG - Getting stadium for ASO Chlef
+01/10/2023 08:38:47 PM - DEBUG - Rows: ['CR Belouizdad', 'Algiers']
+01/10/2023 08:38:47 PM - DEBUG - Starting new HTTPS connection (1): en.wikipedia.org:443
+01/10/2023 08:38:48 PM - DEBUG - https://en.wikipedia.org:443 "GET /wiki/CR_Belouizdad HTTP/1.1" 200 42700

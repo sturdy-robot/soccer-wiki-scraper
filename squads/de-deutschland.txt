@@ -1,0 +1,31 @@
+
+##############################
+# Deutschland (GER) 
+#   - 26 players
+
+(1)   GK  Manuel Neuer           ##  114  ,Bayern Munich
+(12)  GK  Kevin Trapp            ##    6  ,Eintracht Frankfurt
+(22)  GK  Marc-André ter Stegen  ##   30  ,Barcelona
+(2)   DF  Antonio Rüdiger        ##   54  ,Real Madrid
+(3)   DF  David Raum             ##   12  ,RB Leipzig
+(4)   DF  Matthias Ginter        ##   47  ,SC Freiburg
+(5)   DF  Thilo Kehrer           ##   23  ,West Ham United
+(15)  DF  Niklas Süle            ##   42  ,Borussia Dortmund
+(16)  DF  Lukas Klostermann      ##   19  ,RB Leipzig
+(20)  DF  Christian Günter       ##    7  ,SC Freiburg
+(23)  DF  Nico Schlotterbeck     ##    6  ,Borussia Dortmund
+(25)  DF  Armel Bella-Kotchap    ##    2  ,Southampton
+(6)   MF  Joshua Kimmich         ##   71  ,Bayern Munich
+(8)   MF  Leon Goretzka          ##   45  ,Bayern Munich
+(11)  MF  Mario Götze            ##   63  ,Eintracht Frankfurt
+(13)  MF  Thomas Müller          ##  118  ,Bayern Munich
+(14)  MF  Jamal Musiala          ##   17  ,Bayern Munich
+(17)  MF  Julian Brandt          ##   39  ,Borussia Dortmund
+(18)  MF  Jonas Hofmann          ##   17  ,Borussia Mönchengladbach
+(19)  MF  Leroy Sané             ##   48  ,Bayern Munich
+(21)  MF  İlkay Gündoğan         ##   63  ,Manchester City
+(7)   FW  Kai Havertz            ##   31  ,Chelsea
+(9)   FW  Niclas Füllkrug        ##    1  ,Werder Bremen
+(10)  FW  Serge Gnabry           ##   36  ,Bayern Munich
+(24)  FW  Karim Adeyemi          ##    4  ,Borussia Dortmund
+(26)  FW  Youssoufa Moukoko      ##    1  ,Borussia Dortmund
