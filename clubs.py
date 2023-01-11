@@ -1,40 +1,60 @@
 import json
 import logging
 import re
+import uuid
+import asyncio
+from typing import Tuple, Optional
 from urllib.parse import urljoin
 
 import requests
-import wptools
+import pandas as pd
 from bs4 import BeautifulSoup
 
-
-# Enter wiki page -> Scrape tables -> For each table row, get the link to the team -> Enter team page -> Get stadium infobox
 
 def get_city_name(href):
     url = urljoin('https://en.wikipedia.org', href)
     page = requests.get(url)
+    if page.status_code == 404:
+        return None
     soup = BeautifulSoup(page.text, 'html.parser')
-    logging.debug(f'Getting city name for {url}')
+    title = soup.find('h1').text
+    logging.debug(f'Getting stadium for {title}')
     pattern = re.compile(r'city of \w')
     return soup.find(pattern).text.strip('city of').strip()
 
 
-def get_stadium(href):
+def get_stadium(href) -> Tuple[Optional[str], Optional[str]]:
     url = urljoin('https://en.wikipedia.org', href)
     page = requests.get(url)
+    if page.status_code == 404:
+        logging.debug(f"Page {url} not found")
+        return None, None
     soup = BeautifulSoup(page.text, 'html.parser')
     title = soup.find('h1').text
     logging.debug(f'Getting stadium for {title}')
-    p = wptools.page(title).get_parse()
-    if p.data['infobox'] is not None:
-        stadium = p.data['infobox'].get('ground')
-        capacity = p.data['infobox'].get('capacity')
-        return stadium, capacity
-    return None, None
+    infobox = soup.find('table', class_="infobox")
+    if infobox:
+        df = pd.read_html(str(infobox))[0]
+        df.to_dict()
+        try:
+            stadium = df.loc[df[0].isin(['Ground', 'Stadium'])].to_dict('records')[0].get(1)
+        except IndexError:
+            stadium = None
+        try:
+            capacity = df.loc[df[0] == 'Capacity'].to_dict('records')[0].get(1)
+        except IndexError:
+            capacity = None
+    else:
+        stadium, capacity = None, None
+    logging.debug(f"**{title}**: Stadium: {stadium}, Capacity: {capacity}")
+    return stadium, capacity
 
 
-def get_wiki_tables(soup: BeautifulSoup):
-    tables = soup.find_all('table', class_='sortable')
+def get_wiki_tables(soup: BeautifulSoup, url) -> list[dict]:
+    if url == 'https://en.wikipedia.org/wiki/List_of_top-division_football_clubs_in_UEFA_countries':
+        tables = soup.find_all('table')
+    else:
+        tables = soup.find_all('table', class_='sortable')
     clubs = []
     for table in tables:
         for tr in table.find_all('tr'):
@@ -43,24 +63,39 @@ def get_wiki_tables(soup: BeautifulSoup):
                 continue
             rows = [td.text.strip() for td in tds]
             logging.debug(f'Rows: {rows}')
-            club_name = ''
-            city = ''
-            stadium = ''
-            capacity = ''
+
+            if rows[0] == '':
+                continue
+
             if len(rows) > 2:
                 club_name = rows[1]
-                url = tds[1].find('a').get('href')
-                stadium, capacity = get_stadium(url)
+
+                try:
+                    url = tds[1].find('a').get('href')
+                    stadium, capacity = get_stadium(url)
+                except AttributeError:
+                    url = None
+                    stadium, capacity = None, None
+
                 if len(rows) == 3:
                     city = rows[2]
                 else:
-                    city = get_city_name(url)
+                    if url is None:
+                        city = None
+                    else:
+                        city = get_city_name(url)
             else:
                 club_name = rows[0]
                 city = rows[1]
-                url = tds[0].find('a').get('href')
-                stadium, capacity = get_stadium(url)
+
+                try:
+                    url = tds[0].find('a').get('href')
+                    stadium, capacity = get_stadium(url)
+                except AttributeError:
+                    stadium, capacity = None, None
+
             clubs.append({
+                'id': uuid.uuid4().int,
                 'name': club_name,
                 'city': city,
                 'stadium_name': stadium,
@@ -70,13 +105,47 @@ def get_wiki_tables(soup: BeautifulSoup):
     return clubs
 
 
-def get_countries(soup: BeautifulSoup):
-    h2 = soup.find_all('h2')
+def get_countries(soup: BeautifulSoup, url):
+    if url == 'https://en.wikipedia.org/wiki/List_of_top-division_football_clubs_in_UEFA_countries':
+        h2 = soup.find_all('h3')
+    else:
+        h2 = soup.find_all('h2')
     countries = [h.get_text().replace("[edit]", "") for h in h2 if
                  h.get_text().replace("[edit]", "") not in ["Contents", "External links", "See also",
                                                             "League ranking", "References", "Current champions",
                                                             "Navigation menu"]]
     return countries
+
+
+def get_url_data(url) -> list[dict]:
+    data = []
+    logging.debug(f'Getting {url}')
+    page = requests.get(url)
+    soup = BeautifulSoup(page.text, 'html.parser')
+    countries = get_countries(soup, url)
+    logging.debug(f'Countries: {countries}')
+    clubs = get_wiki_tables(soup, url)
+    for country, club in zip(countries, clubs):
+        data.append({
+            'name': country,
+            'clubs': clubs
+        })
+    return data
+
+
+def get_region_data(url):
+    pattern = re.compile(r'https:\/\/en.wikipedia.org\/wiki\/List_of_top-division_football_clubs_in_(\w+)_countries')
+    region = re.match(pattern, url).group(1)
+    d = get_url_data(url)
+    r = {
+        "name": region,
+        "countries": d,
+    }
+
+    with open(f'{region.lower()}.json', 'w') as fp:
+        json.dump(r, fp)
+
+    return region
 
 
 def scrape_wiki_pages():
@@ -88,25 +157,18 @@ def scrape_wiki_pages():
         'https://en.wikipedia.org/wiki/List_of_top-division_football_clubs_in_OFC_countries',
         'https://en.wikipedia.org/wiki/List_of_top-division_football_clubs_in_CONMEBOL_countries',
     ]
-    data = []
+    data = {
+        "regions": []
+    }
     for url in urls:
-        logging.debug(f'Getting {url}')
-        page = requests.get(url)
-        soup = BeautifulSoup(page.text, 'html.parser')
-        countries = get_countries(soup)
-        logging.debug(f'Countries: {countries}')
-        clubs = get_wiki_tables(soup)
-        for country, club in zip(countries, clubs):
-            data.append({
-                'name': country,
-                'clubs': clubs
-            })
+        d = get_region_data(url)
+        data["regions"].append(d)
 
-    with open('data.json', 'w') as fp:
+    with open('clubs/clubs.json', 'w') as fp:
         json.dump(data, fp)
 
 
-logging.basicConfig(filename='clubs.log', encoding='utf-8', level=logging.DEBUG,
+logging.basicConfig(filename='clubs.log', filemode='w', encoding='utf-8', level=logging.DEBUG,
                     format='%(asctime)s - %(levelname)s - %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
 logging.info('Started')
 scrape_wiki_pages()
