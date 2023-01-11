@@ -11,6 +11,7 @@ lxml = "*"
 tabulate = "*"
 wptools = "*"
 pycountry = "*"
+aiohttp = "*"
 
 [dev-packages]
 

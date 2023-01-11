@@ -2,7 +2,8 @@ import json
 import logging
 import re
 import uuid
-import asyncio
+# import asyncio
+# import aiohttp
 from typing import Tuple, Optional
 from urllib.parse import urljoin
 
@@ -71,7 +72,11 @@ def get_wiki_tables(soup: BeautifulSoup, url) -> list[dict]:
                 club_name = rows[1]
 
                 try:
-                    url = tds[1].find('a').get('href')
+                    urls = tds[1].find_all('a')
+                    if len(urls) > 1:
+                        url = urls[1].get('href')
+                    else:
+                        url = urls[0].get('href')
                     stadium, capacity = get_stadium(url)
                 except AttributeError:
                     url = None
