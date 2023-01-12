@@ -7,19 +7,10 @@ from textwrap import dedent
 from bs4 import BeautifulSoup
 
 
-country_names = [
-    "Ecuador", "Netherlands", "Qatar", "Senegal",
-    "England", "Iran", "United States", "Wales",
-    "Argentina", "Mexico", "Poland", "Saudi Arabia",
-    "Australia", "Denmark", "France", "Tunisia",
-    "Costa Rica", "Germany", "Japan", "Spain",
-    "Belgium", "Canada", "Croatia", "Morocco",
-    "Brazil", "Cameroon", "Serbia", "Switzerland",
-    "Ghana", "Portugal", "South Korea", "Uruguay",
-]
-
-page = requests.get("https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_squads")
+page = requests.get("https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_squads")
 soup = BeautifulSoup(page.text, 'html.parser')
+h3 = soup.find_all('h3')
+country_names = [h.text.replace('[edit]', '').strip() for h in h3[:32]]
 table_soup = soup.find_all('table', class_='sortable')
 
 tables = pd.read_html(str(table_soup))
@@ -29,7 +20,7 @@ while table_index < 32:
     players = table.values.tolist()
     fmt_pl = []
     for player in players:
-        player_name = player[2].replace('(captain)', '')
+        player_name = player[2].replace('(captain)', '(c)')
         player_pos = 0
         if player[1] == "DF":
             player_pos = 1
@@ -37,7 +28,7 @@ while table_index < 32:
             player_pos = 2
         elif player[1] == "FW":
             player_pos = 3
-        formatted_players = [f'({player[0]})', player_pos, f'{player_name}', f'##', f'{player[3]}', f',{player[4]}\n']
+        formatted_players = [f'({player[0]})', player_pos, f'{player_name}', f'##', f'{player[3]}', f'{player[4]}\n']
         fmt_pl.append(formatted_players)
 
     fmt_pl.sort(key=itemgetter(1))
@@ -78,7 +69,7 @@ while table_index < 32:
         f.write(dedent(f"""
         ##############################
         # {country_name} ({country_official_code}) 
-        #   - 26 players
+        #   - {len(fmt_pl)} players
         \n"""))
         f.write(tabulate(fmt_pl, tablefmt='plain', numalign='right'))
     table_index += 1
