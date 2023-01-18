@@ -21,7 +21,7 @@ def get_city_name(href):
     title = soup.find('h1').text
     logging.debug(f'Getting stadium for {title}')
     pattern = re.compile(r'city of \w')
-    return soup.find(pattern).text.strip('city of').strip()
+    return soup.find(pattern).text.replace('city of', '').strip()
 
 
 def get_stadium(href) -> Tuple[Optional[str], Optional[str]]:
@@ -39,11 +39,13 @@ def get_stadium(href) -> Tuple[Optional[str], Optional[str]]:
         df.to_dict()
         try:
             stadium = df.loc[df[0].isin(['Ground', 'Stadium'])].to_dict('records')[0].get(1)
-        except IndexError:
+        except (IndexError, KeyError):
             stadium = None
         try:
+            pattern = re.compile(r'(\b\d[\d,.]*\b)')
             capacity = df.loc[df[0] == 'Capacity'].to_dict('records')[0].get(1)
-        except IndexError:
+            capacity = int(re.match(pattern, capacity).group(1).replace(',', '').replace('.', '')) # Formatting the capacity and remove brackets
+        except (IndexError, KeyError):
             capacity = None
     else:
         stadium, capacity = None, None
@@ -58,46 +60,80 @@ def get_wiki_tables(soup: BeautifulSoup, url) -> list[dict]:
         tables = soup.find_all('table', class_='sortable')
     clubs = []
     for table in tables:
-        for tr in table.find_all('tr'):
-            tds = tr.find_all('td')
-            if not tds:
-                continue
-            rows = [td.text.strip() for td in tds]
-            logging.debug(f'Rows: {rows}')
-
-            if rows[0] == '':
-                continue
-
-            if len(rows) > 2:
-                club_name = rows[1]
-
-                try:
-                    urls = tds[1].find_all('a')
-                    if len(urls) > 1:
-                        url = urls[1].get('href')
-                    else:
-                        url = urls[0].get('href')
-                    stadium, capacity = get_stadium(url)
-                except AttributeError:
-                    url = None
-                    stadium, capacity = None, None
-
-                if len(rows) == 3:
-                    city = rows[2]
-                else:
-                    if url is None:
+        # Wikipedia is a bitch for consistency
+        if url == 'https://en.wikipedia.org/wiki/List_of_top-division_football_clubs_in_UEFA_countries':
+            for th in table.find_all('th', scope="row"):
+                for club in th:
+                    club_name = club.text.replace('(C)', '').replace('(R)', '').replace('(O)', '').replace('(D)', '').strip()
+                    try:
+                        url = club.find('a').get('href')
+                    except AttributeError:
                         city = None
+                        stadium, capacity = None, None
                     else:
-                        city = get_city_name(url)
-            else:
-                club_name = rows[0]
-                city = rows[1]
+                        page = requests.get(url)
+                        soup = BeautifulSoup(page.text, 'html.parser')
+                        city = None
+                        stadium, capacity = get_stadium(url)
+                    if club_name not in ['Africa','Asia','Europe', 'North,Central Americaand the Caribbean', 'Oceania', 'South America']: # wikipedia has these things in the page. Need to filter them out
+                        clubs.append({
+                            'id': uuid.uuid4().int,
+                            'name': club_name,
+                            'city': city,
+                            'stadium_name': stadium,
+                            'stadium_capacity': capacity,
+                        })
+        else:
+            for tr in table.find_all('tr'):
+                tds = tr.find_all('td')
+                if not tds:
+                    continue
+                rows = [td.text.replace('(C)', '').replace('(R)', '').replace('(O)').strip() for td in tds]
+                logging.debug(f'Rows: {rows}')
 
-                try:
-                    url = tds[0].find('a').get('href')
-                    stadium, capacity = get_stadium(url)
-                except AttributeError:
-                    stadium, capacity = None, None
+                if rows[0] == '':
+                    continue
+
+                if len(rows) > 2:
+                    if url == 'https://en.wikipedia.org/wiki/List_of_top-division_football_clubs_in_CAF_countries':
+                        club_name = rows[0]
+                    else:
+                        club_name = rows[1]
+
+                    try:
+                        if url == 'https://en.wikipedia.org/wiki/List_of_top-division_football_clubs_in_CAF_countries':
+                            urls = tds[0].find_all('a')
+                        else:
+                            urls = tds[1].find_all('a')
+                        if len(urls) > 1:
+                            url_ = urls[1].get('href')
+                        else:
+                            url_ = urls[0].get('href')
+                        stadium, capacity = get_stadium(url_)
+                    except (AttributeError, IndexError):
+                        url_ = None
+                        stadium, capacity = None, None
+
+                    if len(rows) == 3:
+                        city = rows[2]
+                    else:
+                        if url_ is None:
+                            city = None
+                        else:
+                            city = get_city_name(url_)
+                else:
+                    club_name = rows[0]
+                    city = rows[1]
+
+                    try:
+                        urls = tds[0].find_all('a')
+                        if len(urls) > 1:
+                            url_ = urls[1].get('href')
+                        else:
+                            url_ = urls[0].get('href')
+                        stadium, capacity = get_stadium(url_)
+                    except (AttributeError, IndexError):
+                        stadium, capacity = None, None
 
             clubs.append({
                 'id': uuid.uuid4().int,
@@ -150,7 +186,7 @@ def get_region_data(url):
     with open(f'{region.lower()}.json', 'w') as fp:
         json.dump(r, fp)
 
-    return region
+    return r
 
 
 def scrape_wiki_pages():
