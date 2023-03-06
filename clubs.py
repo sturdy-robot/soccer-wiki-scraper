@@ -2,8 +2,6 @@ import json
 import logging
 import re
 import uuid
-# import asyncio
-# import aiohttp
 from typing import Tuple, Optional
 from urllib.parse import urljoin
 
@@ -21,7 +19,10 @@ def get_city_name(href):
     title = soup.find('h1').text
     logging.debug(f'Getting stadium for {title}')
     pattern = re.compile(r'city of \w')
-    return soup.find(pattern).text.replace('city of', '').strip()
+    city_name = soup.find(pattern).text.replace('city of', '').strip()
+    if not city_name:
+        return None
+    return city_name
 
 
 def get_stadium(href) -> Tuple[Optional[str], Optional[str]]:
@@ -44,7 +45,8 @@ def get_stadium(href) -> Tuple[Optional[str], Optional[str]]:
         try:
             pattern = re.compile(r'(\b\d[\d,.]*\b)')
             capacity = df.loc[df[0] == 'Capacity'].to_dict('records')[0].get(1)
-            capacity = int(re.match(pattern, capacity).group(1).replace(',', '').replace('.', '')) # Formatting the capacity and remove brackets
+            # Formatting the capacity and remove brackets
+            capacity = int(re.match(pattern, capacity).group(1).replace(',', '').replace('.', ''))
         except (IndexError, KeyError):
             capacity = None
     else:
@@ -53,37 +55,66 @@ def get_stadium(href) -> Tuple[Optional[str], Optional[str]]:
     return stadium, capacity
 
 
-def get_wiki_tables(soup: BeautifulSoup, url) -> list[dict]:
-    if url == 'https://en.wikipedia.org/wiki/List_of_top-division_football_clubs_in_UEFA_countries':
-        tables = soup.find_all('table')
-    else:
-        tables = soup.find_all('table', class_='sortable')
+def get_uefa_wiki_table(soup: BeautifulSoup) -> list[dict]:
+    tables = soup.find_all('table')
     clubs = []
     for table in tables:
-        # Wikipedia is a bitch for consistency
-        if url == 'https://en.wikipedia.org/wiki/List_of_top-division_football_clubs_in_UEFA_countries':
-            for th in table.find_all('th', scope="row"):
-                for club in th:
-                    club_name = club.text.replace('(C)', '').replace('(R)', '').replace('(O)', '').replace('(D)', '').strip()
-                    try:
-                        url = club.find('a').get('href')
-                    except AttributeError:
-                        city = None
-                        stadium, capacity = None, None
-                    else:
-                        page = requests.get(url)
-                        soup = BeautifulSoup(page.text, 'html.parser')
-                        city = None
-                        stadium, capacity = get_stadium(url)
-                    if club_name not in ['Africa','Asia','Europe', 'North,Central Americaand the Caribbean', 'Oceania', 'South America']: # wikipedia has these things in the page. Need to filter them out
-                        clubs.append({
-                            'id': uuid.uuid4().int,
-                            'name': club_name,
-                            'city': city,
-                            'stadium_name': stadium,
-                            'stadium_capacity': capacity,
-                        })
-        else:
+        for th in table.find_all('th', scope="row"):
+            for club in th:
+                club_name = club.text
+                if club_name is None:
+                    club_name = club.find('a').text
+
+                if club_name is not None:
+                    club_name = club_name\
+                        .replace('(C)', '')\
+                        .replace('(R)', '')\
+                        .replace('(O)', '')\
+                        .replace('(D)', '').strip()
+                else:
+                    continue
+
+                try:
+                    url = club.find('a').attrs['href']
+                    logging.debug(f'{club_name}: {url}')
+                    stadium, capacity = get_stadium(url)
+                    city = get_city_name(url)
+                except AttributeError:
+                    # Some pages don't have a valid URL, so we just ignore city, stadium and capacity values
+                    logging.debug(f'Unable to get href for {club_name}')
+                    city = None
+                    stadium, capacity = None, None
+
+                # Hack to filter these things out
+                if club_name not in [
+                    'Africa',
+                    'Asia',
+                    'Europe',
+                    'North, Central America and the Caribbean',
+                    'Oceania',
+                    'South America'
+                ]:
+                    clubs.append({
+                        'id': uuid.uuid4().int,
+                        'name': club_name,
+                        'city': city,
+                        'stadium_name': stadium,
+                        'stadium_capacity': capacity,
+                    })
+
+    return clubs
+
+
+def get_wiki_tables(url: str) -> list[dict]:
+    page = requests.get(url)
+    soup = BeautifulSoup(page.text, 'html.parser')
+    if url == 'https://en.wikipedia.org/wiki/List_of_top-division_football_clubs_in_UEFA_countries':
+        return get_uefa_wiki_table(soup)
+    else:
+        tables = soup.find_all('table', class_='sortable')
+        clubs = []
+        club_names = set()
+        for table in tables:
             for tr in table.find_all('tr'):
                 tds = tr.find_all('td')
                 if not tds:
@@ -135,18 +166,23 @@ def get_wiki_tables(soup: BeautifulSoup, url) -> list[dict]:
                     except (AttributeError, IndexError):
                         stadium, capacity = None, None
 
-            clubs.append({
-                'id': uuid.uuid4().int,
-                'name': club_name,
-                'city': city,
-                'stadium_name': stadium,
-                'stadium_capacity': capacity,
-            })
+                club_names.add(club_name)
+
+                if club_name not in club_names:
+                    clubs.append({
+                        'id': uuid.uuid4().int,
+                        'name': club_name,
+                        'city': city,
+                        'stadium_name': stadium,
+                        'stadium_capacity': capacity,
+                    })
 
     return clubs
 
 
-def get_countries(soup: BeautifulSoup, url):
+def get_countries(url):
+    page = requests.get(url)
+    soup = BeautifulSoup(page.text, 'html.parser')
     if url == 'https://en.wikipedia.org/wiki/List_of_top-division_football_clubs_in_UEFA_countries':
         h2 = soup.find_all('h3')
     else:
@@ -161,11 +197,9 @@ def get_countries(soup: BeautifulSoup, url):
 def get_url_data(url) -> list[dict]:
     data = []
     logging.debug(f'Getting {url}')
-    page = requests.get(url)
-    soup = BeautifulSoup(page.text, 'html.parser')
-    countries = get_countries(soup, url)
+    countries = get_countries(url)
     logging.debug(f'Countries: {countries}')
-    clubs = get_wiki_tables(soup, url)
+    clubs = get_wiki_tables(url)
     for country, club in zip(countries, clubs):
         data.append({
             'name': country,
@@ -186,27 +220,18 @@ def get_region_data(url):
     with open(f'{region.lower()}.json', 'w') as fp:
         json.dump(r, fp)
 
-    return r
-
 
 def scrape_wiki_pages():
     urls = [
-        'https://en.wikipedia.org/wiki/List_of_top-division_football_clubs_in_CAF_countries',
-        'https://en.wikipedia.org/wiki/List_of_top-division_football_clubs_in_AFC_countries',
+        # 'https://en.wikipedia.org/wiki/List_of_top-division_football_clubs_in_CAF_countries',
+        # 'https://en.wikipedia.org/wiki/List_of_top-division_football_clubs_in_AFC_countries',
         'https://en.wikipedia.org/wiki/List_of_top-division_football_clubs_in_UEFA_countries',
-        'https://en.wikipedia.org/wiki/List_of_top-division_football_clubs_in_CONCACAF_countries',
-        'https://en.wikipedia.org/wiki/List_of_top-division_football_clubs_in_OFC_countries',
-        'https://en.wikipedia.org/wiki/List_of_top-division_football_clubs_in_CONMEBOL_countries',
+        # 'https://en.wikipedia.org/wiki/List_of_top-division_football_clubs_in_CONCACAF_countries',
+        # 'https://en.wikipedia.org/wiki/List_of_top-division_football_clubs_in_OFC_countries',
+        # 'https://en.wikipedia.org/wiki/List_of_top-division_football_clubs_in_CONMEBOL_countries',
     ]
-    data = {
-        "regions": []
-    }
     for url in urls:
-        d = get_region_data(url)
-        data["regions"].append(d)
-
-    with open('clubs/clubs.json', 'w') as fp:
-        json.dump(data, fp)
+        get_region_data(url)
 
 
 logging.basicConfig(filename='clubs.log', filemode='w', encoding='utf-8', level=logging.DEBUG,

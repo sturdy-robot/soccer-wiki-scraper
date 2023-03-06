@@ -28,7 +28,7 @@ while table_index < 32:
             player_pos = 2
         elif player[1] == "FW":
             player_pos = 3
-        formatted_players = [f'({player[0]})', player_pos, f'{player_name}', f'##', f'{player[3]}', f'{player[4]}\n']
+        formatted_players = [f'({player[0]:02})', player_pos, f'{player_name}', f'##', f'{player[3]}', f'{player[4]}\n']
         fmt_pl.append(formatted_players)
 
     fmt_pl.sort(key=itemgetter(1))
