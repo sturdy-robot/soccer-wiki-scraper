@@ -25,7 +25,7 @@ async def parse_club_data(session: aiohttp.ClientSession, url: str, name: str) -
         stadium = stadium.replace('Stadium:', '').strip()
         league = league.replace('League:', '').strip()
         location = location.replace('Location:', '').strip()
-        country = country.replace('Country', '').strip()
+        country = country.replace('Country:', '').strip()
 
         return {
             "name": name,
