@@ -14,8 +14,7 @@ country_names = [h.text.replace('[edit]', '').strip() for h in h3[:32]]
 table_soup = soup.find_all('table', class_='sortable')
 
 tables = pd.read_html(str(table_soup))
-table_index = 0
-while table_index < 32:
+for table_index in range(32):
     table = tables[table_index][['No.', 'Pos.', 'Player', 'Caps', 'Club']]
     players = table.values.tolist()
     fmt_pl = []
@@ -28,7 +27,14 @@ while table_index < 32:
             player_pos = 2
         elif player[1] == "FW":
             player_pos = 3
-        formatted_players = [f'({player[0]:02})', player_pos, f'{player_name}', f'##', f'{player[3]}', f'{player[4]}\n']
+        formatted_players = [
+            f'({player[0]:02})',
+            player_pos,
+            f'{player_name}',
+            '##',
+            f'{player[3]}',
+            f'{player[4]}\n',
+        ]
         fmt_pl.append(formatted_players)
 
     fmt_pl.sort(key=itemgetter(1))
@@ -72,4 +78,3 @@ while table_index < 32:
         #   - {len(fmt_pl)} players
         \n"""))
         f.write(tabulate(fmt_pl, tablefmt='plain', numalign='right'))
-    table_index += 1
